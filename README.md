@@ -20,8 +20,7 @@ The database build (`00_init_database.sql`) follows a deliberate **stage → cle
 
 1. **Staging tables** — all 8 source CSVs land into `NVARCHAR`-only staging tables first, so nothing gets rejected on load regardless of formatting quirks.
 2. **Cleaning & type-casting** — staging data is cleaned and cast into the final typed star schema using `TRY_CONVERT` (safely handles bad values as `NULL` instead of erroring), `NULLIF` (empty strings and literal `'N/A'` text → `NULL`), and `TRY_CONVERT(DATE, ..., 101)` to correctly parse US-format (`m/d/yyyy`) dates.
-3. **Line-ending handling** — source files had mixed `\n`/`\r\n` line endings with no quoted fields, so `BULK INSERT` splits on `0x0a` directly (avoiding a `FORMAT='CSV'` failure some setups throw) and a trailing `CHAR(13)` left on the last field of `\r\n` rows is stripped with `REPLACE` during the clean step.
-4. **Keys** are added *after* load (source data was already referentially clean), and staging tables are dropped once the typed tables are populated.
+3. **Keys** are added *after* load (source data was already referentially clean), and staging tables are dropped once the typed tables are populated.
 
 | Table | Type | Grain |
 |---|---|---|
