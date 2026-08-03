@@ -102,12 +102,30 @@ Department-level scorecard with total visits, unique patients, total billed, ave
 
 ## 📊 Major Outputs
 
-| KPI Summary Table | ![](Reports/Key_Metrics.png) |
-| Provider League Table | ![](Reports/Provider_league_table.png) |
-| Segmentations | ![](Reports/visit_patients_and_age_groupsegments.png) |
-| `gold.report_patients` sample output | ![](Reports/patient_report.png) |
-| `gold.report_department` sample output | ![](Reports/department_report.png) |
-| `gold.report_Provider` sample output | ![](Reports/Provider_report.png)|
+ **KPI Summary Table**
+ 
+ ![](Reports/Key_Metrics.png) 
+
+**Provider League Table** 
+
+![](Reports/Provider_league_table.png) 
+
+**Segmentations** 
+
+![](Reports/visit_patients_and_age_groupsegments.png) 
+
+
+**Patient Report**
+
+![](Reports/patient_report.png) 
+
+**Department Report**
+
+![](Reports/department_report.png) 
+
+**Provider Report**
+
+![](Reports/Provider_report.png)
 
 ---
 
