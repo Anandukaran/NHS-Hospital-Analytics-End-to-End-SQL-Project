@@ -131,8 +131,8 @@ Department-level scorecard with total visits, unique patients, total billed, ave
 
 ## 📁 Files
 
-- `00_init_database.sql` — database creation, star schema DDL, staging → clean → load pipeline
-- `NHS_Hospital_Analytics_EDA.sql` — full analysis script, stages 1–8
+- [`00_init_database.sql`](00_init_database.sql) — database creation, star schema DDL, staging → clean → load pipeline
+- [`NHS_Hospital_Analytics_EDA.sql`](NHS_Hospital_Analytics_EDA.sql) — full analysis script, stages 1–8
 
 *Note: Data cleaning logic in `00_init_database.sql` (handling mixed line endings, US date formats, and staging-table type casting) was built with AI-assisted development to handle edge cases efficiently. The exploratory and advanced analytics queries, segmentation logic, and reporting views in `NHS_Hospital_Analytics_EDA.sql` were written independently.*
 
