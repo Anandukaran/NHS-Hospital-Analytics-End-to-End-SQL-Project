@@ -8,7 +8,7 @@ Built entirely in **T-SQL (Microsoft SQL Server)** on a custom **star schema** (
 
 ## 📌 Project Overview
 
-This project takes raw, messy hospital visit CSVs and turns them into a clean, queryable star schema, then answers operational, financial, and quality-of-care questions — the kind a hospital analytics or health data team would actually track. Modelled as a mirror of the retail analytics project's structure, but adapted for healthcare-specific measures (visit cost, length of stay, satisfaction, emergency rate, payment status).
+This project takes raw, messy hospital visit CSVs and turns them into a clean, queryable star schema, with dim_cities snowflaked one level out via dim_patients, then answers operational, financial, and quality-of-care questions — the kind a hospital analytics or health data team would actually track. Modelled as a mirror of the retail analytics project's structure, but adapted for healthcare-specific measures (visit cost, length of stay, satisfaction, emergency rate, payment status).
 
 **Domain measure note:** `visit_cost` (a visit's billed amount) = `treatment_cost + medication_cost`. This is the primary revenue/value measure throughout the project, functionally equivalent to `sales_amount` in a retail model. Insurance coverage and room charges are tracked separately. The grain of `fact_visits` is **one row per visit** (one attendance).
 
