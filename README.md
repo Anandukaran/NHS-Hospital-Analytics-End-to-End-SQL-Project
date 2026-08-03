@@ -103,7 +103,7 @@ Department-level scorecard with total visits, unique patients, total billed, ave
 
 | Query | Screenshot |
 |---|---|
-| KPI Summary Table | *(Reports/Key Metrics.png)* |
+| KPI Summary Table | * (Reports/Key_Metrics.png) * |
 | Provider League Table | *(add screenshot)* |
 | Patient Value Segmentation | *(add screenshot)* |
 | `gold.report_patients` sample output | *(add screenshot)* |
