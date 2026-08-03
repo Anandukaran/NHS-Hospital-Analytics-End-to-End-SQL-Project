@@ -34,6 +34,10 @@ The database build (`00_init_database.sql`) follows a deliberate **stage → cle
 | `gold.dim_insurance` | Dimension | One row per insurance provider |
 | `gold.dim_cities` | Dimension | One row per city (linked via patients) |
 
+## Schema
+
+![](schema.png)
+
 ---
 
 ## 🔍 Project Structure
@@ -97,18 +101,14 @@ Department-level scorecard with total visits, unique patients, total billed, ave
 
 ---
 
-## 📊 Sample Outputs
+## 📊 Major Outputs
 
-*Screenshots of query results and view outputs go here.*
-
-| Query | Screenshot |
-|---|---|
-| KPI Summary Table | * (Reports/Key_Metrics.png) * |
-| Provider League Table | *(add screenshot)* |
-| Patient Value Segmentation | *(add screenshot)* |
-| `gold.report_patients` sample output | *(add screenshot)* |
-| `gold.report_providers` sample output | *(add screenshot)* |
-| `gold.report_departments` sample output | *(add screenshot)* |
+| KPI Summary Table | ![](Reports/Key_Metrics.png) |
+| Provider League Table | ![](Reports/Provider_league_table.png) |
+| Segmentations | ![](Reports/visit_patients_and_age_groupsegments.png) |
+| `gold.report_patients` sample output | ![](Reports/patient_report.png) |
+| `gold.report_department` sample output | ![](Reports/department_report.png) |
+| `gold.report_Provider` sample output | ![](Reports/Provider_report.png)|
 
 ---
 
